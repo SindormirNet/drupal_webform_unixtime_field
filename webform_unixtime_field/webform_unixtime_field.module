@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * Implements hook_webform_component_info().
+ */
+function webform_unixtime_field_webform_component_info()
+{
+  $component = array();
+  $component['unixtime'] = array(
+    'label' => t('UNIX Timestamp'),
+    'description' => t('A hidden field which sends UNIX timestamp.'),
+    'features' => array(
+      // Show this field in e-mailed submissions. Defaults to TRUE.
+      'email' => TRUE,
+      'required' => FALSE,
+      'conditional' => TRUE,
+      'group' => FALSE,
+      'attachment' => FALSE,
+      'title_display' => FALSE,
+      'description' => FALSE,
+    ),
+    'file' => 'unixtime.inc',
+  );
+  return $component;
+}

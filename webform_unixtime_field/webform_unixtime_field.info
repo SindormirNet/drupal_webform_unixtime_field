@@ -1,0 +1,7 @@
+name = Webform UNIX Timestamp Field
+description = Give webforms a hidden UNIX timestamp field type.
+core = 7.x
+package = Webform
+project = "webform_unixtime_field"
+dependencies[] = webform
+
